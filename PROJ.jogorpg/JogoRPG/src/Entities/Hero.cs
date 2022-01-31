@@ -1,8 +1,8 @@
 namespace JogoRPG.src.Entities
 {
-    public class Arus
+    public abstract class Hero
     {
-        public Arus(string Name, int Level, string HeroType)
+        public Hero(string Name, int Level, string HeroType)
         {
             this.Name = Name;
             this.Level = Level;
@@ -16,6 +16,11 @@ namespace JogoRPG.src.Entities
         public override string ToString()
         {
             return this.Name + " " + this.Level + " " + this.HeroType;
+        }
+
+        public virtual string Attack()
+        {
+            return this.Name + "Atacou com a sua espada";
         }
     }
 }

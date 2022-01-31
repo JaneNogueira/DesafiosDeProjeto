@@ -7,11 +7,11 @@ namespace dotnet_poo
     {
         static void Main(string[]args)
         {
-            Arus hero = new Arus("Arus", 23, "Knight");
-            Arus oponnet = new Arus("Maleficus", 99, "Devil");
-            Arus wizard = new Arus("Jennica", 25, "White Wizard");
+            Knight arus = new Knight("Arus", 23, "Knight");
+            Wizard wizard = new Wizard("Jennica", 25, "White Wizard");
        
-            Console.WriteLine(wizard.Attack());
+            Console.WriteLine(wizard.Attack(1));
+            Console.WriteLine(wizard.Attack(8));
             
         }
     }
